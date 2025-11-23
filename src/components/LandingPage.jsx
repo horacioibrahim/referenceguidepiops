@@ -211,7 +211,49 @@ const LandingPage = () => {
                 </div>
             </section>
 
-            {/* Bonuses */}
+            {/* Chapters Section */}
+            <section id="chapters" className="py-20 bg-slate-950">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Capítulos do Livro</h2>
+                        <p className="text-slate-400">Uma jornada completa pela gestão de produtos digitais, da inovação à execução.</p>
+                    </div>
+
+                    <div className="space-y-4">
+                        {[
+                            { number: 1, title: "Introdução - como nasceu este livro", desc: "Uma jornada pessoal sobre a criação deste livro, explorando as motivações e experiências que levaram ao desenvolvimento de uma metodologia inovadora." },
+                            { number: 2, title: "Introdução à gestão de produtos", desc: "Fundamentos essenciais da gestão de produtos digitais, estabelecendo as bases para compreender os conceitos apresentados no livro." },
+                            { number: 3, title: "Organização do fluxo da inovação", desc: "Estruturação sistemática do processo de inovação, incluindo roadmapping e ciclo de desenvolvimento do produto." },
+                            { number: 4, title: "Entendendo as partes do roadmap", desc: "Detalhamento dos componentes essenciais do roadmap e como eles se integram para criar um plano de produto efetivo." },
+                            { number: 5, title: "Modelo de distribuição demandas", desc: "Framework para classificação e gerenciamento de tarefas, explorando ambidestria estratégica e cadeia de valor." },
+                            { number: 6, title: "POps: Product Operations", desc: "Metodologia para operações de produto, incluindo gestão de demandas de última hora e processos bubble-up." },
+                            { number: 7, title: "DISCOVERY", desc: "Processo estruturado para descoberta de produtos, focando na validação de hipóteses e pesquisa com usuários." },
+                            { number: 8, title: "TAM (Task Allocation Matrix)", desc: "Sistema de alocação de tarefas para maximizar eficiência e produtividade das equipes." },
+                            { number: 9, title: "RELEASES - a semântica da entrega", desc: "Estratégias para planejamento e execução de releases, com foco na comunicação efetiva." },
+                            { number: 10, title: "FASES - fases ou status", desc: "Estruturação das diferentes etapas do desenvolvimento de produto e seus indicadores de progresso." },
+                            { number: 11, title: "BORA - priorização com RICE e WSJF", desc: "Método de priorização combinando diferentes frameworks para tomada de decisão mais assertiva." },
+                            { number: 12, title: "Prestação de contas", desc: "Métricas e indicadores para acompanhamento de performance e resultados do produto." },
+                            { number: 13, title: "Product analytics", desc: "Análise de dados e métricas para tomada de decisão baseada em evidências no desenvolvimento de produtos." },
+                            { number: 14, title: "Árvore de Oportunidade", desc: "Framework para identificação e avaliação sistemática de oportunidades de produto." },
+                            { number: 15, title: "Batidão: em busca da batida perfeita", desc: "Metodologia para encontrar o ritmo ideal entre inovação e execução no desenvolvimento de produtos." },
+                            { number: 16, title: "A3 Report", desc: "Técnica de documentação e resolução de problemas baseada em metodologia Toyota." },
+                            { number: 17, title: "A4W's - As 4 semanas", desc: "Framework de planejamento e execução em ciclos de 4 semanas para maior agilidade." }
+                        ].map((chapter, i) => (
+                            <div key={i} className="group bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:bg-slate-800 transition-all hover:border-blue-500/30">
+                                <div className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center text-blue-400 font-bold text-xl border border-blue-500/20 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                                        {chapter.number}
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">{chapter.title}</h3>
+                                        <p className="text-slate-400 text-sm leading-relaxed">{chapter.desc}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-950">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-8 md:p-12 rounded-3xl border border-blue-500/20 text-center relative overflow-hidden">
@@ -274,15 +316,10 @@ const LandingPage = () => {
                         {/* Author Image Column */}
                         <div className="w-full md:w-1/3 flex flex-col items-center">
                             <div className="relative w-64 h-80 md:w-full md:h-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-800 group">
-                                {/* Placeholder - User should replace with actual image in public/images/author.png */}
                                 <img
                                     src="/images/author.png"
                                     alt="Horacio Ibrahim"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                    onError={(e) => {
-                                        e.target.onerror = null;
-                                        e.target.src = "https://placehold.co/400x500/1e293b/cbd5e1?text=Foto+do+Autor";
-                                    }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-60"></div>
                             </div>
