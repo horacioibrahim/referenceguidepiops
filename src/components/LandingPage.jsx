@@ -64,7 +64,7 @@ const LandingPage = () => {
                     <div className="space-y-8">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium">
                             <Star className="w-4 h-4 fill-blue-400" />
-                            <span>Lançamento Oficial</span>
+                            <span>Black Friday Oficial</span>
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -265,17 +265,22 @@ const LandingPage = () => {
 
                         <div className="grid md:grid-cols-3 gap-8 text-left">
                             {[
-                                { title: "Planilha War Room", desc: "Classificação e organização tática." },
-                                { title: "Canvas de Alinhamento", desc: "Uma visão, uma agenda e um propósito." },
-                                { title: "Mini-guia 5 Passos", desc: "Estruture iniciativas do zero." },
+                                { title: "Planilha War Room", desc: "Classificação e organização tática.", price: "47" },
+                                { title: "Canvas de Alinhamento", desc: "Uma visão, uma agenda e um propósito.", price: "149" },
+                                { title: "Mini-guia 5 Passos", desc: "Estruture iniciativas do zero.", price: "97" },
                                 { title: "Template JTBD", desc: "Job To Be Done pronto para usar." },
                                 { title: "Template TAM/SAM/SOM", desc: "Descubra o tamanho do seu mercado." },
                                 { title: "Value Stream Mapping", desc: "Mapa da Cadeia de valor padrao de processos ISO." }
                             ].map((bonus, i) => (
-                                <div key={i} className="bg-slate-950/50 p-6 rounded-xl border border-slate-800">
+                                <div key={i} className="bg-slate-950/50 p-6 rounded-xl border border-slate-800 flex flex-col h-full">
                                     <div className="text-blue-400 font-bold text-lg mb-2">0{i + 1}</div>
                                     <h4 className="font-bold text-white mb-2">{bonus.title}</h4>
-                                    <p className="text-slate-400 text-sm">{bonus.desc}</p>
+                                    <p className="text-slate-400 text-sm mb-4 flex-grow">{bonus.desc}</p>
+                                    {bonus.price && (
+                                        <div className="text-slate-500 text-sm line-through font-mono">
+                                            R$ {bonus.price},00
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
