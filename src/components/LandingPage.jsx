@@ -84,7 +84,7 @@ const LandingPage = () => {
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                            Crie produtos que <span className="text-blue-400">funcionam de verdade</span> mesmo tudo parece urgente.
+                            Crie produtos que <span className="text-blue-400">funcionam de verdade</span> mesmo quando tudo parece urgente.
                         </h1>
 
                         <p className="text-xl text-slate-400 leading-relaxed max-w-lg">
@@ -461,6 +461,37 @@ const LandingPage = () => {
                                 </div>
                             </details>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Summary Section */}
+            <section className="py-20 bg-slate-950 border-t border-slate-900">
+                <div className="container mx-auto px-4 max-w-4xl text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Resumindo:</h2>
+                    <p className="text-xl text-slate-300 mb-12 font-medium">
+                        Você terá acesso ao Guia de Referência Product Innovation Ops<br />
+                        + 6 bônus acessíveis imediatamente:
+                    </p>
+
+                    <div className="mb-8">
+                        <p className="text-2xl text-slate-400 mb-2">De: <span className="line-through text-red-500 decoration-2">R$ 472,29</span></p>
+                        <p className="text-3xl font-bold text-white">Por apenas:</p>
+                    </div>
+
+                    <div className="space-y-4 max-w-2xl mx-auto">
+                        <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 hover:border-slate-700 transition-colors">
+                            <span className="text-slate-300 font-medium text-lg">à vista</span>
+                            <span className="text-green-400 font-bold text-2xl">R$ 29,00</span>
+                        </div>
+
+                        <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 hover:border-slate-700 transition-colors">
+                            <div className="text-left">
+                                <span className="text-slate-300 font-medium text-lg block">Parcelado</span>
+                                <span className="text-slate-500 text-sm">*O valor parcelado possui acréscimo</span>
+                            </div>
+                            <span className="text-green-400 font-bold text-2xl whitespace-nowrap">2 x R$ 15,26*</span>
+                        </div>
                     </div>
                 </div>
             </section>
