@@ -482,7 +482,7 @@ const LandingPage = () => {
                     <div className="space-y-4 max-w-2xl mx-auto">
                         <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 hover:border-slate-700 transition-colors">
                             <span className="text-slate-300 font-medium text-lg">à vista</span>
-                            <span className="text-green-400 font-bold text-2xl">R$ 29,00</span>
+                            <span className="text-green-400 font-bold text-2xl">R$ 59,00</span>
                         </div>
 
                         <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-4 hover:border-slate-700 transition-colors">
@@ -490,7 +490,7 @@ const LandingPage = () => {
                                 <span className="text-slate-300 font-medium text-lg block">Parcelado</span>
                                 <span className="text-slate-500 text-sm">*O valor parcelado possui acréscimo</span>
                             </div>
-                            <span className="text-green-400 font-bold text-2xl whitespace-nowrap">2 x R$ 15,26*</span>
+                            <span className="text-green-400 font-bold text-2xl whitespace-nowrap">3 x R$ 21,06*</span>
                         </div>
                     </div>
                 </div>
@@ -508,7 +508,7 @@ const LandingPage = () => {
                     </p>
 
                     <a
-                        href="https://pay.hotmart.com/Y100672606O?off=890zcldg&bid=1763738147239"
+                        href="https://pay.hotmart.com/Y100672606O?off=7hg3ynoe&bid=1763939263599"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ag_injection w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto"
