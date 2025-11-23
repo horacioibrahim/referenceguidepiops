@@ -511,7 +511,7 @@ const LandingPage = () => {
                         href="https://pay.hotmart.com/Y100672606O?off=890zcldg&bid=1763738147239"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto"
+                        className="ag_injection w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto"
                     >
                         Quero garantir meu exemplar agora
                         <ArrowRight className="w-6 h-6" />
