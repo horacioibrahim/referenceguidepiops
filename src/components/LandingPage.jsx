@@ -272,30 +272,64 @@ const LandingPage = () => {
 
             {/* Author */}
             <section id="author" className="py-20 bg-slate-900/50">
-                <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="flex flex-col md:flex-row items-center gap-12">
-                        <div className="w-48 h-48 bg-slate-800 rounded-full flex-shrink-0 border-4 border-slate-700 overflow-hidden">
-                            {/* Placeholder for Author Image */}
-                            <div className="w-full h-full bg-slate-700 flex items-center justify-center text-slate-500">Foto</div>
-                        </div>
-                        <div className="text-center md:text-left">
-                            <h2 className="text-3xl font-bold mb-4">Sobre o Autor</h2>
-                            <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                                Com mais de 10 anos de experiência liderando produtos e operações em grandes empresas brasileiras,
-                                o autor traz uma visão prática, sem jargões desnecessários, focada no que realmente funciona
-                                no dia a dia das empresas que usam tecnologias para vencer.
-                            </p>
-                            <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                                "Não sou criador de conteúdo, não vivo disso. 90% da minha renda vem de liderança prática, no campo de batalha."
-                            </p>
-                            <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                                Decidi compartilhar este material porque vejo profissionais sofrendo com ansiedade e medo por falta de método.
-                                Não tenho disponibilidade para manter este material acessível para sempre.
-                            </p>
-                            <div className="flex gap-4 justify-center md:justify-start">
-                                {/* Social Icons could go here */}
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="flex flex-col md:flex-row gap-12 items-start">
+
+                        {/* Author Image Column */}
+                        <div className="w-full md:w-1/3 flex flex-col items-center">
+                            <div className="relative w-64 h-80 md:w-full md:h-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-800 group">
+                                {/* Placeholder - User should replace with actual image in public/images/author.png */}
+                                <img
+                                    src="/images/author.png"
+                                    alt="Horacio Ibrahim"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = "https://placehold.co/400x500/1e293b/cbd5e1?text=Foto+do+Autor";
+                                    }}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-60"></div>
                             </div>
                         </div>
+
+                        {/* Content Column */}
+                        <div className="w-full md:w-2/3 text-left">
+                            <h2 className="text-4xl font-bold mb-2 text-white">Quem é Horácio Ibrahim?</h2>
+                            <div className="h-1 w-20 bg-blue-500 mb-8"></div>
+
+                            <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
+                                <p>
+                                    Horácio é uma das maiores mentes do mercado de produtos e inovação brasileiro. Sua trajetória é marcada por frameworks eficazes, insights robustos e a capacidade comprovada de transformar produtos em ativos estratégicos essenciais para o negócio.
+                                </p>
+                                <p>
+                                    Com sólida experiência em gestão de produtos e certificações internacionais pela <strong>AIPMM, SAFe® e Universidade de Alberta</strong>, ele alia teoria, execução e estratégia para entregar valor real.
+                                </p>
+                                <p>
+                                    Desde 2015, liderou iniciativas estratégicas na maior empresa pública de tecnologia da América Latina, criando produtos ("colab") com Amazon, Google e Microsoft.
+                                </p>
+                                <p>
+                                    Em 2023, criou a <strong>Agnostic Data</strong>, plataforma que nasceu para resolver um dos maiores desafios das empresas modernas: transformar sinais de comportamento de usuários e eventos em decisões estratégicas. Hoje, atua como PMO na maior govtech do Brasil.
+                                </p>
+                            </div>
+
+                            {/* Certification Logos */}
+                            <div className="mt-10 flex flex-wrap gap-6 items-center opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+                                {/* Placeholders for logos - User should put images in public/images/ */}
+                                <img src="/images/safe-logo.png" alt="SAFe Certified" className="h-16 object-contain" onError={(e) => e.target.style.display = 'none'} />
+                                <img src="/images/aipmm-logo.png" alt="AIPMM Certified" className="h-16 object-contain" onError={(e) => e.target.style.display = 'none'} />
+                                <img src="/images/uofa-logo.png" alt="University of Alberta" className="h-16 object-contain" onError={(e) => e.target.style.display = 'none'} />
+
+                                {/* Fallback text if images are missing */}
+                                <div className="flex gap-4 text-xs font-bold text-slate-500 uppercase tracking-widest">
+                                    <span>SAFe® Agilist</span>
+                                    <span>•</span>
+                                    <span>CPM AIPMM</span>
+                                    <span>•</span>
+                                    <span>Product Mgmt</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -306,9 +340,9 @@ const LandingPage = () => {
                     <h2 className="text-3xl font-bold text-center mb-16">O que estão dizendo</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
-                            { name: "Ana Silva", role: "Head de Produto", text: "Mudou completamente a forma como organizamos nosso time. Essencial!" },
-                            { name: "Carlos Mendes", role: "CTO", text: "Finalmente um livro que une técnica e estratégia sem ser chato. Recomendo." },
-                            { name: "Mariana Costa", role: "Product Manager", text: "Os templates bônus já valeram o investimento. Apliquei no dia seguinte." }
+                            { name: "Sulivan Santiago", role: "CPO & CTO (Galileu Saúde)", text: "Este livro, nos apresenta a arquitetura completa de uma orquestra que toca a música que os negócios querem ouvir: produtos incríveis e inovadores que geram valor de verdade." },
+                            { name: "Adriano Martins", role: "Product & Innovation Lead (Governo)", text: "Este livro apresenta uma abordagem séria e fundamentada, onde se configura como um guia prático imprescindível para organizar e aprimorar a gestão de produtos." },
+                            { name: "Thiago Oliveira", role: "COO | CTO | CIO | Researcher | MSc", text: "O livro trás insights práticos de quem esteve à frente de grandes projetos de sucesso. Recomendo para todos os profissionais de TI que queiram montar times de alto desempenho." }
                         ].map((t, i) => (
                             <div key={i} className="p-8 bg-slate-800/30 rounded-2xl border border-slate-700 relative">
                                 <div className="text-blue-500 text-4xl absolute top-4 left-4">"</div>
