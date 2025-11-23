@@ -3,6 +3,22 @@ import { CheckCircle, BookOpen, Target, Zap, Users, Star, ChevronDown, ArrowRigh
 
 const LandingPage = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const images = [
+        "/images/open_book/open_book_1.png",
+        "/images/open_book/open_book_2.png",
+        "/images/open_book/open_book_3.png",
+        "/images/open_book/open_book_4.png"
+    ];
+
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % images.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -68,7 +84,7 @@ const LandingPage = () => {
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                            Crie produtos que <span className="text-blue-400">funcionam de verdade</span> — mesmo em empresas caóticas.
+                            Crie produtos que <span className="text-blue-400">funcionam de verdade</span> mesmo tudo parece urgente.
                         </h1>
 
                         <p className="text-xl text-slate-400 leading-relaxed max-w-lg">
@@ -175,9 +191,23 @@ const LandingPage = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="order-1 md:order-2 bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 shadow-2xl">
-                            <div className="aspect-video bg-slate-950 rounded-lg flex items-center justify-center border border-slate-800">
-                                <span className="text-slate-500">Imagem do Livro Aberto / Interior</span>
+                        <div className="order-1 md:order-2 bg-gradient-to-br from-slate-800 to-slate-900 p-2 rounded-2xl border border-slate-700 shadow-2xl relative group">
+                            <div
+                                className="aspect-video bg-slate-950 rounded-lg overflow-hidden cursor-pointer relative"
+                                onClick={() => setIsModalOpen(true)}
+                            >
+                                {images.map((img, index) => (
+                                    <img
+                                        key={index}
+                                        src={img}
+                                        alt={`Interior do livro - Página ${index + 1}`}
+                                        className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                            }`}
+                                    />
+                                ))}
+                                <div className="absolute bottom-4 right-4 bg-black/50 px-3 py-1 rounded-full text-xs text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                    Clique para ampliar
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,10 +476,15 @@ const LandingPage = () => {
                         Garanta seu exemplar agora e receba todos os bônus exclusivos de lançamento.
                     </p>
 
-                    <button className="w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto">
+                    <a
+                        href="https://pay.hotmart.com/Y100672606O?off=890zcldg&bid=1763738147239"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto"
+                    >
                         Quero garantir meu exemplar agora
                         <ArrowRight className="w-6 h-6" />
-                    </button>
+                    </a>
 
                     <p className="mt-6 text-sm text-slate-500">
                         🔒 Pagamento 100% seguro • Acesso imediato aos bônus
@@ -463,6 +498,30 @@ const LandingPage = () => {
                     <p>&copy; 2024 Product Innovation Ops. Todos os direitos reservados.</p>
                 </div>
             </footer>
+            {/* Image Modal */}
+            {isModalOpen && (
+                <div
+                    className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+                    onClick={() => setIsModalOpen(false)}
+                >
+                    <button
+                        className="absolute top-4 right-4 text-white hover:text-blue-400 transition-colors"
+                        onClick={() => setIsModalOpen(false)}
+                    >
+                        <X className="w-8 h-8" />
+                    </button>
+                    <div
+                        className="relative w-full max-w-6xl h-[80vh] flex items-center justify-center"
+                        onClick={e => e.stopPropagation()}
+                    >
+                        <img
+                            src={images[currentImageIndex]}
+                            alt="Interior do livro ampliado"
+                            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
