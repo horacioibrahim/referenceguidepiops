@@ -93,16 +93,12 @@ const LandingPage = () => {
                     </div>
 
                     <div className="relative group perspective-1000">
-                        <div className="relative w-3/4 mx-auto md:w-full max-w-md aspect-[3/4] bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-2xl border border-slate-700 flex items-center justify-center transform group-hover:rotate-y-6 transition-transform duration-500">
-                            <div className="text-center p-8">
-                                <div className="w-24 h-24 bg-blue-500/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                                    <BookOpen className="w-12 h-12 text-blue-400" />
-                                </div>
-                                <h3 className="text-2xl font-bold text-white mb-2">Product Innovation Ops</h3>
-                                <p className="text-slate-400">Como criar produtos singulares</p>
-                            </div>
-                            {/* Book Spine Effect */}
-                            <div className="absolute left-0 top-0 bottom-0 w-4 bg-slate-700/50 rounded-l-lg" />
+                        <div className="relative w-3/4 mx-auto md:w-full max-w-md transform group-hover:rotate-y-6 transition-transform duration-500">
+                            <img
+                                src="/images/book.png"
+                                alt="Product Innovation Ops - Capa do Livro"
+                                className="w-full h-auto rounded-lg shadow-2xl"
+                            />
                         </div>
                         {/* Shadow */}
                         <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-10 bg-black/50 blur-xl rounded-full" />
