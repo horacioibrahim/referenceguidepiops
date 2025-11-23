@@ -114,18 +114,22 @@ const LandingPage = () => {
             <section id="problems" className="py-20 bg-slate-900/50">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Sua empresa vive "apagando incêndio"?</h2>
-                        <p className="text-slate-400 text-lg">Você não está sozinho. A maioria dos times de produto enfrenta o mesmo caos.</p>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Você sente que está sempre "apagando incêndio"?</h2>
+                        <p className="text-slate-400 text-lg">O custo disso não é apenas financeiro. É sua saúde mental e sua carreira em jogo.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
                             "Falta de clareza na estratégia de produto",
                             "Decisões confusas e constante retrabalho",
-                            "Times desalinhados e sem direção",
+                            "Times desalinhados e sem propósito",
                             "Produtos que não evoluem e perdem mercado",
                             "Falta de processos claros para inovar",
-                            "Sensação de estar sempre atrasado"
+                            "Sensação de estar sempre atrasado",
+                            "Medo e crises de ansiedade por falta de clareza",
+                            "Sensação constante de falta de foco",
+                            "Risco de demissão por não conduzir bem as iniciativas",
+                            "Invisibilidade nas mesas estratégicas"
                         ].map((pain, index) => (
                             <div key={index} className="flex items-start gap-4 p-6 bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-red-500/30 transition-colors group">
                                 <div className="mt-1 w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors">
@@ -162,10 +166,11 @@ const LandingPage = () => {
 
                             <div className="space-y-4">
                                 {[
-                                    "Prático, direto e sem enrolação",
-                                    "Frameworks usados em empresas de alta performance",
+                                    "Transforme caos em saúde mental",
                                     "Organiza a operação do zero ao avançado",
-                                    "Ensina a tomar decisões baseadas em dados"
+                                    "Guia prático de liderança no campo de batalha",
+                                    "Sem teorias acadêmicas: 100% aplicável",
+                                    "Torne-se um líder que serve e é ouvido"
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-3">
                                         <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
@@ -187,18 +192,18 @@ const LandingPage = () => {
             <section id="learning" className="py-20 bg-slate-900">
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">O que você vai dominar</h2>
-                        <p className="text-slate-400">Um currículo completo de Product Ops e Inovação</p>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Em 30 dias você vai...</h2>
+                        <p className="text-slate-400">Sair completamente diferente de como começou.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
-                            { icon: Target, title: "Estratégia Real", desc: "Como tirar produtos do caos operacional e focar no que importa." },
-                            { icon: Zap, title: "Produtos Singulares", desc: "O segredo para criar produtos que se destacam no mercado." },
-                            { icon: BookOpen, title: "Product Ops", desc: "Como estruturar uma operação de produto eficiente." },
-                            { icon: Users, title: "Alinhamento Total", desc: "Conecte pessoas, processos e decisões de negócio." },
-                            { icon: CheckCircle, title: "Execução Impecável", desc: "Transforme ideias abstratas em entregas concretas." },
-                            { icon: ShieldCheck, title: "Zero Desperdício", desc: "Evite retrabalho e foque recursos onde gera valor." },
+                            { icon: Target, title: "Visão e Propósito", desc: "Construir uma cadeia de valor clara onde todos têm a mesma visão." },
+                            { icon: Zap, title: "Gestão Sem Caos", desc: "Transformar sua gestão em algo estratégico, previsível e mensurável." },
+                            { icon: Users, title: "Liderança Real", desc: "Ser um líder que serve, inspira confiança e é convidado para mesas estratégicas." },
+                            { icon: ShieldCheck, title: "Segurança", desc: "Acabar com o medo e a ansiedade de não saber conduzir iniciativas." },
+                            { icon: CheckCircle, title: "Entregas Reais", desc: "Entregar o certo, no tempo certo, superando expectativas." },
+                            { icon: BookOpen, title: "Autonomia", desc: "Sem depender de formações caríssimas e demoradas." },
                         ].map((item, i) => (
                             <div key={i} className="p-6 bg-slate-800/30 rounded-xl border border-slate-700 hover:bg-slate-800/50 transition-all hover:-translate-y-1">
                                 <item.icon className="w-10 h-10 text-blue-400 mb-4" />
@@ -222,9 +227,12 @@ const LandingPage = () => {
 
                         <div className="grid md:grid-cols-3 gap-8 text-left">
                             {[
-                                { title: "Template de Roadmap", desc: "Planeje sua inovação com clareza." },
-                                { title: "Board de Decisão", desc: "Template pronto para Jira/Notion." },
-                                { title: "Mini-guia Product Ops", desc: "Implemente em 5 passos simples." }
+                                { title: "Planilha War Room", desc: "Classificação e organização tática." },
+                                { title: "Canvas de Alinhamento", desc: "Uma visão, uma agenda e um propósito." },
+                                { title: "Mini-guia 5 Passos", desc: "Estruture iniciativas do zero." },
+                                { title: "Template JTBD", desc: "Job To Be Done pronto para usar." },
+                                { title: "Template TAM/SAM/SOM", desc: "Descubra o tamanho do seu mercado." },
+                                { title: "Value Stream Mapping", desc: "Mapa da Cadeia de valor padrao de processos ISO." }
                             ].map((bonus, i) => (
                                 <div key={i} className="bg-slate-950/50 p-6 rounded-xl border border-slate-800">
                                     <div className="text-blue-400 font-bold text-lg mb-2">0{i + 1}</div>
@@ -273,9 +281,16 @@ const LandingPage = () => {
                         <div className="text-center md:text-left">
                             <h2 className="text-3xl font-bold mb-4">Sobre o Autor</h2>
                             <p className="text-slate-400 text-lg leading-relaxed mb-6">
-                                Com anos de experiência liderando produtos e operações em grandes empresas brasileiras,
+                                Com mais de 10 anos de experiência liderando produtos e operações em grandes empresas brasileiras,
                                 o autor traz uma visão prática, sem jargões desnecessários, focada no que realmente funciona
-                                no dia a dia das empresas de tecnologia.
+                                no dia a dia das empresas que usam tecnologias para vencer.
+                            </p>
+                            <p className="text-slate-400 text-lg leading-relaxed mb-6">
+                                "Não sou criador de conteúdo, não vivo disso. 90% da minha renda vem de liderança prática, no campo de batalha."
+                            </p>
+                            <p className="text-slate-400 text-lg leading-relaxed mb-6">
+                                Decidi compartilhar este material porque vejo profissionais sofrendo com ansiedade e medo por falta de método.
+                                Não tenho disponibilidade para manter este material acessível para sempre.
                             </p>
                             <div className="flex gap-4 justify-center md:justify-start">
                                 {/* Social Icons could go here */}
