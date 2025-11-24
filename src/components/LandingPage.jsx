@@ -179,10 +179,10 @@ const LandingPage = () => {
                             <div className="space-y-4">
                                 {[
                                     "Transforme caos em saúde mental",
-                                    "Organiza a operação do zero ao avançado",
-                                    "Guia prático de liderança no campo de batalha",
-                                    "Sem teorias acadêmicas: 100% aplicável",
-                                    "Torne-se um líder que serve e é ouvido"
+                                    "Organize a operação do zero ao avançado",
+                                    "Seu guia prático de liderança no campo de batalha",
+                                    "Torne-se um líder que serve e é ouvido",
+                                    "Metodologia aplicada em operações reais, com impacto mensurável"
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-3">
                                         <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
