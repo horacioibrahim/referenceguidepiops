@@ -496,6 +496,19 @@ const LandingPage = () => {
                 </div>
             </section>
 
+            {/* Warning Section */}
+            <section className="py-10 bg-slate-950">
+                <div className="container mx-auto px-4 max-w-4xl">
+                    <div className="border border-orange-500 rounded-xl p-8 bg-slate-950/50 text-center">
+                        <h3 className="text-orange-500 font-bold text-xl mb-4 uppercase tracking-wider">Atenção:</h3>
+                        <p className="text-slate-300 text-lg leading-relaxed font-medium">
+                            Meu tempo é dedicado a criar inovação, e liderar times de classe mundial, não a criar cursos. <br className="hidden md:block" />
+                            Por isso este material existe por um período limitado — <span className="text-white font-bold">dificilmente farei algo parecido de novo.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Final CTA */}
             <section id="pricing" className="py-24 relative overflow-hidden">
                 <div className="absolute inset-0 bg-blue-600/5"></div>
@@ -511,7 +524,7 @@ const LandingPage = () => {
                         href="https://pay.hotmart.com/Y100672606O?off=7hg3ynoe&bid=1763939263599"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ag_injection w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-500/30 flex items-center justify-center gap-3 mx-auto"
+                        className="ag_injection w-full md:w-auto bg-green-600 hover:bg-green-500 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-green-500/30 flex items-center justify-center gap-3 mx-auto"
                     >
                         Quero garantir meu exemplar agora
                         <ArrowRight className="w-6 h-6" />
