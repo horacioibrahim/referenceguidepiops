@@ -132,16 +132,27 @@ const LandingPageEntregas = () => {
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            "OpenAI, Google, Amazon, Apple. O valor delas equivale ao PIB de países inteiros. O que elas têm em comum? Processos de gestão de inovação que funcionam.",
-                            "Negócios não morrem por falta de esforço. Morrem por falta de direção. E direção vem de saber gerir produtos, iniciativas e inovação.",
-                            "Toda empresa quer inovar. Pouquíssimas sabem gerir inovação. E é isso que separa quem cresce de quem fecha as portas. inovaçao é sobrevivencia",
-                            "As Big Techs não lideram por sorte. Elas lideram porque sabem transformar ideias em entregas. Toda empresa precisa aprender isso."
-                        ].map((pain, index) => (
+                            { title: "Dificuldade em saber por onde começar", desc: "Você tem ideias, mas não tem clareza do primeiro passo — e acaba travando." },
+                            { title: "Falta de organização entre tarefas, prazos e prioridades", desc: "Tudo parece importante ao mesmo tempo. Você começa mil coisas e termina quase nenhuma." },
+                            { title: "Incapacidade de diferenciar “tarefa urgente” de “tarefa estratégica”", desc: "Você vive no modo sobrevivência, apagando incêndio — e nunca construindo o futuro." },
+                            { title: "Expectativas mal gerenciadas com sócios, clientes ou chefes", desc: "Promete mais do que consegue entregar, não por má intenção, mas por falta de método." },
+                            { title: "Apresentações confusas e pouco profissionais", desc: "Você até trabalha bem, mas não sabe mostrar o valor do que fez — e isso custa caro." },
+                            { title: "Falta de um fluxo claro de trabalho", desc: "Você não tem um sistema. Funciona tudo na cabeça — e a cabeça não aguenta mais." },
+                            { title: "Dificuldade em prestar contas de forma clara e objetiva", desc: "Você entrega, mas não registra, não apresenta, não mostra impacto… E isso ameaça sua credibilidade." },
+                            { title: "Medo real de parecer desorganizado(a)", desc: "A insegurança cresce porque você sabe que poderia estar entregando muito mais." },
+                            { title: "Risco de perder oportunidades (ou o emprego) por não saber explicar o que está fazendo", desc: "Você até trabalha duro — mas trabalhar duro não é o mesmo que trabalhar certo." },
+                            { title: "Ansiedade constante por não ter clareza do que precisa ser feito", desc: "E isso paralisa, cansa, e te deixa sempre com a sensação de “estou atrasado”." },
+                            { title: "Falta de rituais semanais para planejar, revisar e corrigir rota", desc: "Sem rotina, nada flui. E sem método, nada cresce." },
+                            { title: "Falta de um sistema simples para transformar ideias em entregas reais", desc: "O grande problema não é falta de criatividade — é falta de execução estruturada." }
+                        ].map((item, index) => (
                             <div key={index} className="flex items-start gap-4 p-6 bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-red-500/30 transition-colors group">
                                 <div className="mt-1 w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/20 transition-colors">
                                     <X className="w-4 h-4 text-red-400" />
                                 </div>
-                                <p className="text-slate-300">{pain}</p>
+                                <div>
+                                    <h3 className="font-bold text-white mb-2">{item.title}</h3>
+                                    <p className="text-slate-300">{item.desc}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
