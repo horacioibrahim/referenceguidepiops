@@ -103,7 +103,7 @@ const LandingPage = () => {
                                 onClick={() => scrollToSection('learning')}
                                 className="px-8 py-4 rounded-lg font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 transition-all flex items-center justify-center gap-2"
                             >
-                                Ver o que vou aprender
+                                Assistir o que vou aprender
                             </button>
                         </div>
                     </div>
@@ -237,6 +237,21 @@ const LandingPage = () => {
                                 <p className="text-slate-400 text-sm">{item.desc}</p>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Video Section */}
+            <section className="pb-20 bg-slate-900">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-800/50">
+                        <iframe
+                            className="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/0QgVKTxEsvo"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </section>
