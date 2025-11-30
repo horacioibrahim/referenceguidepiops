@@ -3,6 +3,7 @@ import {
     BookOpen, Target, Zap, Users, Star, ChevronDown, ArrowRight, Menu, X,
     Compass, Layers, GitMerge, BarChart2, Activity, CheckCircle, AlertTriangle
 } from 'lucide-react';
+import FlashcardSection from './FlashcardSection';
 
 const LandingPageMetodologia = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -273,6 +274,9 @@ const LandingPageMetodologia = () => {
                 </div>
             </section>
 
+            {/* Flashcards Section */}
+            <FlashcardSection />
+
             {/* Gestão do Fluxo e Discovery */}
             <section className="py-20 bg-slate-900/50">
                 <div className="container mx-auto px-4 max-w-5xl">
@@ -442,6 +446,7 @@ const LandingPageMetodologia = () => {
                     </a>
                 </div>
             </section>
+
 
             {/* Footer */}
             <footer className="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
