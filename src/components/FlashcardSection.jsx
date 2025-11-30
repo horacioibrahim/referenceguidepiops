@@ -199,9 +199,10 @@ const FlashcardSection = () => {
                     {/* Navigation Buttons (Absolute to card container or outside?) 
                         Design shows them on sides. Let's put them absolute to the card container but pushed out.
                     */}
+                    {/* Desktop Navigation Buttons */}
                     <button
                         onClick={handlePrev}
-                        className="absolute top-1/2 -left-16 md:-left-24 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-slate-800 hover:bg-slate-700 text-blue-400 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg border border-slate-700 z-20"
+                        className="hidden md:flex absolute top-1/2 -left-24 -translate-y-1/2 w-14 h-14 bg-slate-800 hover:bg-slate-700 text-blue-400 rounded-full items-center justify-center transition-all hover:scale-110 shadow-lg border border-slate-700 z-20"
                         aria-label="Anterior"
                     >
                         <ArrowLeft className="w-6 h-6" />
@@ -209,7 +210,25 @@ const FlashcardSection = () => {
 
                     <button
                         onClick={handleNext}
-                        className="absolute top-1/2 -right-16 md:-right-24 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-slate-800 hover:bg-slate-700 text-green-400 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg border border-slate-700 z-20"
+                        className="hidden md:flex absolute top-1/2 -right-24 -translate-y-1/2 w-14 h-14 bg-slate-800 hover:bg-slate-700 text-green-400 rounded-full items-center justify-center transition-all hover:scale-110 shadow-lg border border-slate-700 z-20"
+                        aria-label="Próximo"
+                    >
+                        <ArrowRight className="w-6 h-6" />
+                    </button>
+                </div>
+
+                {/* Mobile Navigation Buttons */}
+                <div className="flex md:hidden gap-4 mt-8 mb-4">
+                    <button
+                        onClick={handlePrev}
+                        className="w-14 h-14 bg-slate-800 hover:bg-slate-700 text-blue-400 rounded-full flex items-center justify-center transition-all active:scale-95 shadow-lg border border-slate-700"
+                        aria-label="Anterior"
+                    >
+                        <ArrowLeft className="w-6 h-6" />
+                    </button>
+                    <button
+                        onClick={handleNext}
+                        className="w-14 h-14 bg-slate-800 hover:bg-slate-700 text-green-400 rounded-full flex items-center justify-center transition-all active:scale-95 shadow-lg border border-slate-700"
                         aria-label="Próximo"
                     >
                         <ArrowRight className="w-6 h-6" />
@@ -217,7 +236,7 @@ const FlashcardSection = () => {
                 </div>
 
                 {/* Controls / Progress */}
-                <div className="mt-12 flex items-center gap-8 w-full max-w-md justify-between text-slate-400 text-sm font-medium">
+                <div className="mt-8 md:mt-12 flex items-center gap-8 w-full max-w-md justify-between text-slate-400 text-sm font-medium flex-wrap md:flex-nowrap">
                     <button
                         onClick={handleRestart}
                         className="flex items-center gap-2 hover:text-white transition-colors"

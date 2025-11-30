@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckCircle, BookOpen, Target, Zap, Users, Star, ChevronDown, ArrowRight, Menu, X, HelpCircle, ShieldCheck } from 'lucide-react';
 
 const LandingPage = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const navigate = useNavigate();
 
     const images = [
         "/images/open_book/open_book_1.png",
@@ -42,6 +44,8 @@ const LandingPage = () => {
                         <button onClick={() => scrollToSection('solution')} className="hover:text-white transition-colors">O Livro</button>
                         <button onClick={() => scrollToSection('learning')} className="hover:text-white transition-colors">O Que Aprender</button>
                         <button onClick={() => scrollToSection('author')} className="hover:text-white transition-colors">Autor</button>
+                        {/* Navigation to page/route /metodologia */}
+                        <button onClick={() => navigate('/metodologia')} className="hover:text-white transition-colors">Metodologia</button>
                     </div>
 
                     <button
