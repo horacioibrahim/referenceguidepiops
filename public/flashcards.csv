@@ -1,0 +1,70 @@
+"Quais são os quatro pilares fundamentais da gestão de produtos, conforme descrito no livro?","Levantamento de Oportunidades, Seleção com Critérios, Especificação para Desenvolvimento, e Crescimento e Monitoramento da Saúde."
+O que o pilar 'Levantamento de Oportunidades' na gestão de produtos visa corrigir?,"Visa corrigir ideias não estruturadas e o desalinhamento, evitando investimentos em iniciativas irrelevantes."
+Qual é a principal função do pilar 'Seleção com Critérios' na gestão de produtos?,"Conectar a estratégia à execução, filtrando ideias e definindo quais iniciativas têm maior impacto e viabilidade para mitigar vieses."
+O pilar 'Especificação para Desenvolvimento' na gestão de produtos aborda qual problema?,"A desconexão entre inovação e usuários finais, traduzindo prioridades em entregas concretas para as equipes de desenvolvimento."
+O que o pilar 'Crescimento e Monitoramento da Saúde' busca evitar em um produto?,Busca evitar a estagnação e a perda de participação no mercado através do monitoramento de métricas e ajustes dinâmicos.
+"Segundo o livro, quais são as três perguntas fundamentais que compõem a visão do negócio para iniciar um roadmap?",Onde estamos? Onde queremos chegar (ou para onde preciso ir)? e Em quanto tempo?
+"A prática de negligenciar ou acelerar etapas do processo de desenvolvimento (discovery, UX, coding, etc.) é a principal origem do(a) _____.",débito técnico
+"De acordo com o NIST, o custo para corrigir um defeito na fase de implantação e manutenção pode ser de _____ a _____ vezes maior do que na fase de requisitos.",30 a 100
+"No contexto de roadmapping, qual é a diferença entre 'roadmap' e 'roadmapping'?","O roadmap é o mapa final ou canvas estratégico, enquanto o roadmapping é o processo contínuo de sua concepção e alinhamento."
+"No contexto da gestão ambidestra, 'pavimentação' refere-se a atividades como _____, enquanto 'valor' refere-se a _____.","infraestrutura, segurança e desempenho; entrega de funcionalidade percebida pelo usuário final"
+"Demandas que surgem de pesquisas de mercado e feedback de clientes são classificadas como _____, enquanto oportunidades geradas por avanços tecnológicos são ____.",Market Pull; Technology Push
+"O _____ é a fase para entender profundamente as dores e necessidades do mercado, enquanto o _____ foca no desenvolvimento de soluções para essas necessidades.",Espaço do Problema; Espaço da Solução
+Termo: Versão Alpha (no ciclo de vida de software),Uma versão disponibilizada para um grupo fechado e selecionado de pessoas para testes iniciais em um ambiente controlado.
+Termo: Versão Beta (no ciclo de vida de software),"Uma versão com acesso restrito para um público externo maior, destinada à coleta de feedback em um ambiente parcialmente controlado."
+Termo: General Availability (GA),"O lançamento completo e oficial de um produto, disponível para o público geral."
+"Qual métrica representa o tempo total desde que uma demanda é aprovada até ser entregue, medindo a eficiência geral do fluxo?",Lead Time.
+Qual métrica refere-se ao tempo necessário para completar uma tarefa específica desde o momento em que o trabalho nela começa até sua conclusão?,Cycle Time.
+Qual é a hierarquia de planejamento no funil de distribuição de demandas apresentado no livro?,"Propósito (MTP) > Objetivos-Alvo > Resultados-Chave (OKRs) > TAMs (Tarefas, Ações e Movimentos)."
+"No modelo de distribuição de demandas, as _____ representam empreendimentos estratégicos de maior escala, enquanto as _____ são pontuais e de curto prazo.",iniciativas; tarefas
+"O equilíbrio entre exploração (inovação, descoberta) e explotação (eficiência, otimização) é o conceito central da _____.",ambidestria organizacional
+"No fluxo de decisão para classificar uma TAM, se a ação é recorrente, ela deve ser classificada imediatamente como um(a) _____.",Follow-up
+"No fluxo de decisão para classificar uma TAM, se uma ação não recorrente impacta um Key Result e sua duração é superior a 10 dias, ela deve ser classificada como uma(a) _____.",Iniciativa
+"Para medir o equilíbrio da ambidestria, um indicador útil é a porcentagem de esforço dedicado a _____ versus _____.",exploração vs. explotação
+"Na classificação ambidestra das TAMs, o grupo 'Definir(ção)' refere-se a entregáveis intermediários como pesquisas e protótipos, enquanto 'Implementar(ção)' refere-se a _____.","uma funcionalidade ou produto disponível para o mercado, mesmo que em beta"
+O que é Product Operations (POps)?,"É a espinha dorsal que conecta times de produto, engenharia e dados para otimizar processos, garantir o fluxo de insights e aumentar a previsibilidade das entregas."
+"As demandas que surgem das operações ou do time de desenvolvimento, muitas vezes sem uma meta de negócio definida, são chamadas de demandas _____.",bubble up
+Qual ferramenta visual é sugerida para o 'Ato da validação da ideia' na fase de discovery?,O Validation Board (Quadro de Validação).
+"No Validation Board, a _____ é a suposição que, se invalidada, tem a maior capacidade de inviabilizar o negócio.",Suposição de Maior Risco (Riskiest Assumption)
+"Qual linguagem neutra-técnica, baseada em linguagem natural com formato Given-When-Then, é recomendada para descrever funcionalidades?",Gherkin.
+O que é um PRD (Product Requirements Document)?,"É um documento estratégico que descreve os requisitos de um produto ou funcionalidade, alinhando todos os envolvidos sobre o que, por que e como será implementado."
+O que é uma TAM (Task Allocation Matrix) na metodologia do livro?,"É a representação de um esforço do negócio (tarefa, ação ou movimento) estruturado com base em múltiplos frameworks como OKR, BORA, RACI, etc., para alinhar estratégia e execução."
+O framework de priorização BORA é uma adaptação que combina elementos de quais outros dois frameworks conhecidos?,RICE (da Intercom) e WSJF (do SAFe).
+Quais são as variáveis principais que compõem a pontuação do BORA?,"Alcance (Reach), Impacto, Confiança (Confidence), Criticidade de tempo e Esforço."
+Termo: Custo de Atraso (Cost of Delay - CoD),O impacto econômico (custo adicional ou receita perdida) gerado pela demora na entrega de uma funcionalidade ou projeto.
+"Na priorização BORA, qual papel é tipicamente responsável por estimar o 'Esforço'?",A equipe de engenharia.
+"Na priorização BORA, qual papel é tipicamente responsável por avaliar o 'Impacto' nos resultados de negócio?",O time de negócio.
+Por que a priorização incorreta (ex: escolher uma tarefa de baixo BORA/WSJF primeiro) aumenta o custo total de atraso?,Porque adiciona o Custo de Atraso das tarefas de maior valor ao tempo em que elas ficam em espera na fila.
+"Quais são as quatro fases principais do ciclo de vida de um produto, representadas pela 'curva S'?","Introdução, Crescimento, Maturidade e Declínio."
+"Segundo o estudo da Y Combinator citado, qual o tempo médio para se atingir o Product-Market Fit (PMF) desde o início do desenvolvimento?","Aproximadamente 30,5 meses (cerca de 2 anos e 6 meses)."
+O que é a Árvore de Oportunidades (Opportunity Solution Tree)?,"Uma ferramenta visual que mapeia problemas do mercado, soluções propostas e resultados esperados, alinhando as decisões de produto aos objetivos de negócio."
+"No 'batidão' (acompanhamento diário), qual deve ser o primeiro estágio de foco?",Começar pelos problemas ou bloqueios operacionais.
+"O que é o A3 Report, originado no Sistema Toyota de Produção?",É uma ferramenta de resolução de problemas que organiza dados e insights em uma única página para facilitar a comunicação e a tomada de decisões baseada em dados.
+Qual é o objetivo do método A4Ws (As 4 semanas)?,"Criar um plano de entregas claro, visual e tangível para um ciclo de um mês, reforçando o compromisso e a previsibilidade."
+A análise de produtos (Product Analytics) é dividida em quais duas grandes categorias no livro?,Análise e métricas de inovação e desenvolvimento; e Análise e métricas de operações e resultados.
+Qual é a proporção ideal da 'Taxa de Inovação vs Manutenção' para um produto nos primeiros 1-2 anos de desenvolvimento?,70% dos esforços em inovação e 30% em manutenção e operação.
+"Após um produto atingir a maturidade no mercado, qual se torna a proporção ideal da 'Taxa de Inovação vs Manutenção'?",70% em operação e manutenção e 30% em inovação.
+O que um Diagrama de Fluxo Cumulativo (CFD) permite visualizar?,"O Lead Time, o Trabalho em Progresso (WIP), a Taxa de Produção (Throughput) e os gargalos no fluxo de trabalho."
+"No CFD, áreas que se alargam consistentemente ao longo do tempo indicam a presença de um _____ no fluxo de trabalho.",gargalo
+"Qual é a sigla do framework de Dave McClure, também conhecido como 'Métricas do Pirata', que define as etapas da jornada do cliente?",AAARRR.
+Quais são as 6 etapas do framework AAARRR (Métricas do Pirata)?,"Awareness (Conscientização), Acquisition (Aquisição), Activation (Ativação), Retention (Retenção), Revenue (Receita) e Referral (Indicação)."
+Métricas como Custo de Aquisição de Cliente (CAC) e Taxa de Conversão de Landing Page pertencem a qual etapa do funil AAARRR?,Aquisição (Acquisition).
+A métrica Onboarding Completion Rate está associada a qual etapa do funil AAARRR?,Ativação (Activation).
+Métricas como DAU (Daily Active Users) e Churn Rate pertencem a qual etapa do funil AAARRR?,Retenção (Retention).
+Métricas como MRR (Monthly Recurring Revenue) e LTV (Lifetime Value) pertencem a qual etapa do funil AAARRR?,Receita (Revenue).
+A métrica NPS (Net Promoter Score) está mais associada a qual etapa do funil AAARRR?,Indicação (Referral).
+O que é um Ponto Crítico de Sucesso (PCS)?,"É um marco na jornada do usuário que define quando ele percebe o valor real do produto, sendo um forte indicador de retenção futura."
+Qual foi o Ponto Crítico de Sucesso (PCS) identificado pelo Slack para prever a retenção de uma equipe?,"Quando a equipe enviava pelo menos 2.000 mensagens, indicando que a ferramenta foi incorporada à rotina de comunicação."
+"Quais são as duas principais razões para o conflito entre inovação e execução, segundo o livro?",1. Inovação exige investimentos sem retorno imediato e 2. Empresas tendem a priorizar a execução à medida que crescem.
+"O conceito de _____ se baseia em criar processos para garantir que a inovação seja um ciclo contínuo, e não um evento isolado.",InnovationOps
+Quais são os quatro pilares operacionais do conceito de InnovationOps?,"Ideação e Gestão de Oportunidades, Gestão de Produtos, Gestão da Execução e Gestão da Inovação."
+"Qual é o principal desafio na gestão de produtos e inovação, conforme a dinâmica AL/DL (antes e depois de lançado)?",Equilibrar as demandas operacionais que surgem após o lançamento sem sacrificar a capacidade de inovar.
+"O que o autor quer dizer com 'Inovação vem de mais notas fiscais', citando Silvio Meira?","Que a inovação se aprimora na mão do cliente pagante, onde estressores como demandas de clientes e suporte catalisam o crescimento."
+"Qual fenômeno ocorre quando há uma interlocução aparente, mas sem uma troca genuína de informações ou entendimento, causando desalinhamento?",Pseudo-comunicação.
+Qual é a dica prática para obter estimativas de prazo de ciclos 'invisíveis' do time de desenvolvimento?,Discutir sobre a 'duração' da tarefa em vez de uma 'data' específica de entrega.
+"No contexto da 'taxonomia da oportunidade e do problema', qual tipo de demanda exige a definição de cliente, competidores e mercado endereçável?",Uma demanda do tipo Oportunidade.
+"Quando o custo da descoberta supera seus benefícios e o problema já é evidente, investir tempo em dinâmicas de discovery pode ser _____.",desnecessário ou contraproducente
+"Na semântica de entrega, qual é a diferença crucial entre uma entrega 'Beta' e 'GA' (General Availability)?","Beta é uma versão funcional para o público externo com possíveis impactos em capacidade, performance e qualidade, enquanto GA é o lançamento oficial e final."
+"Qual ferramenta visual é usada para conectar um resultado desejado (objetivo) a oportunidades, soluções e experimentos de forma hierárquica?",A Árvore de Oportunidades (Opportunity Solution Tree).
+"No 4º estágio do 'Batidão' (Estratégico), o foco é em 'vender o que foi feito'. Quais são as principais questões a serem abordadas nessa fase?","Como será a entrada no mercado, o posicionamento do marketing e o monitoramento do uso, receita e resultados da entrega."
+Qual é o principal benefício de registrar e monitorar bugs do ponto de vista do gerente de produto?,"Fornece dados estratégicos para otimizar a cadeia de valor, negociar prioridades e aprimorar a qualidade do produto e do processo de desenvolvimento."

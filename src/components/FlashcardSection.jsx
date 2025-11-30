@@ -11,7 +11,7 @@ const FlashcardSection = () => {
     useEffect(() => {
         const fetchCards = async () => {
             try {
-                const response = await fetch('/src/assets/flashcards.csv');
+                const response = await fetch('/flashcards.csv');
                 const text = await response.text();
                 const parsedCards = parseCSV(text);
                 setCards(parsedCards);
@@ -123,7 +123,7 @@ const FlashcardSection = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/src/assets/flashcards.csv';
+        link.href = '/flashcards.csv';
         link.download = 'flashcards.csv';
         document.body.appendChild(link);
         link.click();
